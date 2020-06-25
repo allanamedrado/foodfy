@@ -1,0 +1,26 @@
+/******* media queries ********/
+
+@media (max-width: 1300px) {
+    .content{
+        display: block;
+        margin: 0;
+    }
+
+    .section{
+        text-align: center;
+
+    }
+}
+
+@media(max-width: 1075px) {
+    .section {
+        flex-direction: column;
+        text-align: center;
+        width: 600px;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(150px, 1fr 1fr));
+    }
+}
