@@ -1,0 +1,279 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.content{
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+header img{
+    width: 90px;
+    height: 26.9px;
+    margin-right: 123px;
+}
+
+.menu-links a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #111111;
+    margin-right: 30px;
+}
+
+.menu-links a:hover{
+    font-weight: bold;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    margin: 36px 0 50px;
+    background-color: #FBDFDB;
+    border-radius: 30px;
+    width: 940px;
+    height: 366px;
+}
+
+.description{
+    padding: 60px;
+}
+
+.description h1 {
+    font-weight: bold;
+    font-size: 32px;
+    max-width: 305px;
+}
+
+.description p{
+    font-weight: normal;
+    font-size: 18px;
+    max-width: 316px;
+    margin-right: 200px;
+}
+
+.image img{
+    width: 216px;
+    height: 300px;
+    bottom: 0;
+    margin-top: 72px;
+}
+
+main h1 {
+    margin-bottom: 0px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    margin-top: 50px;
+}
+
+.card-image img{
+    width: 300px;
+    height: 140px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.infos h4 {
+    font-weight: normal;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.infos p{
+    font-size: 14px;
+    color: #777777;
+    margin: 0;
+}
+
+footer{
+    background-color: #EEEEEE;
+    margin-top: 50px;
+}
+
+footer p{
+    color: #999999;
+    font-size: 14px;
+    text-align: center;
+    padding: 23px 0 23px;
+    margin: 0;
+}
+
+/************* ABOUT *****************/
+
+.content-about {
+    margin-top: 50px;
+}
+
+.content-about p{
+    color: #444444;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.about h1 {
+    font-weight: bold;
+    font-size: 24px;
+    color: #111111;
+}
+
+.begin h1 {
+    font-weight: bold;
+    font-size: 20px;
+    color: #111111;
+}
+
+.recipe h1{
+    font-weight: bold;
+    font-size: 20px;
+    color: #111111;
+}
+
+/************** MODAL *****************/
+
+.modalOverlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.modal {
+    background-color: white;
+    width: 660px;
+    height: 413px;
+    border-radius: 16px;
+    position: relative;
+    top: 100px;
+    left: 330px;
+}
+
+.close-modal{
+    position: absolute;
+    bottom: 30px;
+    right: 330px;
+    cursor: pointer;
+}
+
+.close-modal p{
+    color: #999999;
+    font-size: 16px; 
+    text-align: center;
+}
+
+/************* MODAL ACTIVE **************/
+
+.modalOverlay.active{
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-content img{
+    width: 500px;
+    height: 200px;
+    border-radius: 15px;
+    margin-left: 80px;
+    margin-top: 30px;
+}
+
+.info-content h4{
+    font-weight: normal;
+    font-size: 24px;
+    text-align: center;
+    margin: 20px 0 5px;
+}
+
+.info-content p{
+    color: #777777;
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+    margin: 0 0 60px;
+}
+
+/************* DETAILS *******************/
+
+.details-image img{
+    width: 940px;
+    height: 280px;
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+
+.infos-details{
+    text-align: center;
+    align-items: center;
+}
+
+.infos-details h4{
+    font-weight: bold;
+    color: #111111;
+    font-size: 30px;
+    margin: 0;
+}
+
+.infos-details p{
+    font-weight: normal;
+    color: #777777;
+    font-size: 15px;
+    margin-top: 4px;
+}
+
+.instructions {
+    margin-top: 50px;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+}
+
+.title button{
+    font-weight: bold;
+    color: #999999;
+    font-size: 12px;
+    border-left: 8px;
+    background-color: white;
+    border: 0;
+    cursor: pointer;
+}
+
+.instructions h4{
+    font-weight: bold;
+    font-size: 20px;
+    color: #111111;
+}
+
+.instructions p{
+    font-weight: normal;
+    color: #444444;
+    font-size: 15px;
+    margin-left: 4px;
+    cursor: pointer;
+}
+
+.hide.desative { 
+    display: none;
+}
+
+.hide.active {
+    display: block;
+}

@@ -1,0 +1,26 @@
+{
+  "name": "foodfy",
+  "version": "1.0.0",
+  "description": "README.md",
+  "main": "scripts.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4",
+    "nunjucks": "^3.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allanamedrado/foodfy.git"
+  },
+  "keywords": [],
+  "author": "Allana Araujo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/allanamedrado/foodfy/issues"
+  },
+  "homepage": "https://github.com/allanamedrado/foodfy#readme"
+}

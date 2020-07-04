@@ -1,0 +1,24 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+    
+        <main>        
+            <div class="cards">
+                {% for recipe in recipes %}
+                    <div class="card" id="{{recipe.id}}">
+                        <div class="card-image">
+                            <img src="{{recipe.image}}" alt="Imagem {{recipe.title}}">
+                        </div>
+                        <div class="infos">
+                            <h4>{{recipe.title}}</h4>
+                            <p class="autor">por {{recipe.author}}</p>
+                        </div>
+                    </div>
+                {% endfor %}     
+
+            </div>
+        </main>
+
+    <script src="scripts.js"></script>
+
+{% endblock %}
