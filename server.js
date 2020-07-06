@@ -27,8 +27,10 @@ server.get("/recipes", function(req, res) {
     return res.render("recipes", {recipes: recipes})
 })
 
+
 server.get("/details", function(req, res) {
-    return res.render("details", {recipes: recipes})
+  
+  return res.render("details", {recipes: recipes})
 })
 
 server.listen(5000, function(){

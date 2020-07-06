@@ -14,13 +14,15 @@ Foodfy é um site que reune as melhores receitas feitas pelos melhores chefes do
 
 <b>Back-end:</b>
 
-* Em construção 
+* Nodejs
+* Express
 
 <b>Front-end:</b>
 
 * HTML5
 * CSS3
 * JavaScript
+* Nunjucks
 
 ___
 

@@ -4,8 +4,8 @@ const hidden = document.querySelector('.hide')
 
 for (const card of cards) {
     card.addEventListener("click", function() {
-        const imageId = card.getAttribute('id')
-        window.location.href = `/details?id=${imageId}`
+        const recipesId = card.getAttribute('id')        
+        window.location.href = `/details?id=${recipesId}`
     })
 }
 
@@ -20,6 +20,7 @@ for (const button of buttons) {
         }
     })       
 }
+
 
 
 
