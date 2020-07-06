@@ -179,36 +179,6 @@ footer p{
     text-align: center;
 }
 
-/************* MODAL ACTIVE **************/
-
-.modalOverlay.active{
-    visibility: visible;
-    opacity: 1;
-}
-
-.modal-content img{
-    width: 500px;
-    height: 200px;
-    border-radius: 15px;
-    margin-left: 80px;
-    margin-top: 30px;
-}
-
-.info-content h4{
-    font-weight: normal;
-    font-size: 24px;
-    text-align: center;
-    margin: 20px 0 5px;
-}
-
-.info-content p{
-    color: #777777;
-    font-size: 18px;
-    font-weight: normal;
-    text-align: center;
-    margin: 0 0 60px;
-}
-
 /************* DETAILS *******************/
 
 .details-image img{
