@@ -3,7 +3,7 @@
 {% block content %}
     {% for recipe in recipes %}
     
-        <div class="card" id="{{recipe.id}}">
+        <div class="recipe-details" id="{{recipes.indexOf(recipe)}}">
 
             <div class="details-image">
                 <img src="{{recipe.image}}" alt="Imagem {{recipe.title}}">
@@ -22,7 +22,11 @@
                         <button>ESCONDER</button>
                     </div>
                     {% for ingredient in recipe.ingredients %}
-                        <li class="hide active">{{ingredient}}</li>
+                        <div class="hide">
+                            <ul>
+                                <li>{{ingredient}}</li>
+                            </ul>
+                        </div>
                     {% endfor %}                
                 </div>
 
@@ -32,7 +36,11 @@
                         <button>ESCONDER</button>
                     </div>
                     {% for item in recipe.preparation %}
-                        <li class="hide active">{{item}}</li>
+                        <div class="hide">
+                            <ul>
+                                <li>{{item}}</li>
+                            </ul>
+                        </div>                        
                     {% endfor %}                
                 </div>
 
@@ -41,7 +49,7 @@
                         <h4>Informações adicionais</h4>
                         <button>ESCONDER</button>                                  
                     </div> 
-                    <p class= "hide active">{{recipe.information}}</p>
+                    <p class= "hide">{{recipe.information}}</p>
                 </div>
             </div>
 

@@ -28,9 +28,12 @@ server.get("/recipes", function(req, res) {
 })
 
 
-server.get("/details", function(req, res) {
- 
-  return res.render("/details", {recipes: recipes})
+server.get("/details/:id", function(req, res) { 
+    
+    const recipeIndex = req.params.id
+    
+    console.log(recipes[recipeIndex])
+    return res.render("details/:id", {recipes: recipes[recipeIndex]})
 })
 
 server.listen(5000, function(){

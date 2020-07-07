@@ -1,23 +1,26 @@
 {% extends "layout.njk" %}
 
-{% block content %}
-    
-        <main>        
-            <div class="cards">
-                {% for recipe in recipes %}
-                    <div class="card" id="{{recipe.id}}">
-                        <div class="card-image">
-                            <img src="{{recipe.image}}" alt="Imagem {{recipe.title}}">
-                        </div>
-                        <div class="infos">
-                            <h4>{{recipe.title}}</h4>
-                            <p class="autor">por {{recipe.author}}</p>
-                        </div>
-                    </div>
-                {% endfor %}     
 
-            </div>
-        </main>
+{%block head%}
+    <title>Receitas - Foodfy</title>
+{%endblock%}
+
+{% block content %} 
+    
+       <div class="recipes">
+           {% for recipe in recipes %}
+                <div class="recipe" id="{{recipes.indexOf(recipe)}}">
+                    <div class="recipe-image">
+                        <img src="{{recipe.image}}" alt="Imagem {{recipe.title}}">
+                    </div>
+                    <div class="infos">
+                        <h4>{{recipe.title}}</h4>                            
+                        <p class="autor">por {{recipe.author}}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>       
+    
 
     <script src="scripts.js"></script>
 
