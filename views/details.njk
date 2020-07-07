@@ -1,17 +1,18 @@
 {% extends "layout.njk" %}
 
-{% block content %}
-    {% for recipe in recipes %}
-    
-        <div class="recipe-details" id="{{recipes.indexOf(recipe)}}">
+{% block head %}
+    <title>{{recipes.title}} - Foodfy </title>
+{%endblock%}
 
+{% block content %}       
+        <div class="recipe-details">
             <div class="details-image">
-                <img src="{{recipe.image}}" alt="Imagem {{recipe.title}}">
+                <img src="{{recipes.image}}" alt="Imagem de {{recipes.title}}">
             </div>
             
             <div class="infos-details">
-                <h4>{{recipe.title}}</h4>
-                <p class="autor">por {{recipe.author}}</p>
+                <h4>{{recipes.title}}</h4>
+                <p class="autor">por {{recipes.author}}</p>
             </div>
         
 
@@ -21,7 +22,7 @@
                         <h4>Ingredientes</h4>
                         <button>ESCONDER</button>
                     </div>
-                    {% for ingredient in recipe.ingredients %}
+                    {% for ingredient in recipes.ingredients %}
                         <div class="hide">
                             <ul>
                                 <li>{{ingredient}}</li>
@@ -35,7 +36,7 @@
                         <h4>Modo de preparo</h4>
                         <button>ESCONDER</button>
                     </div>
-                    {% for item in recipe.preparation %}
+                    {% for item in recipes.preparation %}
                         <div class="hide">
                             <ul>
                                 <li>{{item}}</li>
@@ -49,12 +50,12 @@
                         <h4>Informações adicionais</h4>
                         <button>ESCONDER</button>                                  
                     </div> 
-                    <p class= "hide">{{recipe.information}}</p>
+                    <p class= "hide">{{recipes.information}}</p>
                 </div>
             </div>
 
         </div>
-    {% endfor %}
-    <script src="scripts.js"></script>
+    
+    <script src="scripts.js"> </script>
 {% endblock%}
 

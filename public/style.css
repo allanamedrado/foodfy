@@ -144,31 +144,30 @@ main h1 {
 
 /************* DETAILS *******************/
 
-.recipe-details{
+.recipe-details {
     margin-top: 30px;
 }
 
-.details-image img{
+.details-image img {
     width: 940px;
     height: 280px;
     border-radius: 15px;
     margin-bottom: 50px;
 }
 
-
-.infos-details{
+.infos-details {
     text-align: center;
     align-items: center;
 }
 
-.infos-details h4{
+.infos-details h4 {
     font-weight: bold;
     color: #111111;
     font-size: 30px;
     margin: 0;
 }
 
-.infos-details p{
+.infos-details p {
     font-weight: normal;
     color: #777777;
     font-size: 15px;
@@ -179,12 +178,12 @@ main h1 {
     margin-top: 50px;
 }
 
-.title{
+.title { 
     display: flex;
     align-items: center;
 }
 
-.title button{
+.title button {
     font-weight: bold;
     color: #999999;
     font-size: 12px;
@@ -194,13 +193,13 @@ main h1 {
     cursor: pointer;
 }
 
-.instructions h4{
+.instructions h4 {
     font-weight: bold;
     font-size: 20px;
     color: #111111;
 }
 
-.instructions p{
+.instructions li {
     font-weight: normal;
     color: #444444;
     font-size: 15px;
@@ -208,10 +207,13 @@ main h1 {
     cursor: pointer;
 }
 
-.hide.desative { 
-    display: none;
-}
+/*************ACTIVE/DESATIVE*************/
+
 
 .hide.active {
     display: block;
+}
+
+.hide.desative {
+    display: none;
 }

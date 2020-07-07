@@ -5,7 +5,6 @@ const server = express()
 const recipes = require("./data")
 
 server.use(express.static('public'))
-server.use(express.static('assets'))
 
 server.set("view engine", "njk")
 
@@ -27,13 +26,12 @@ server.get("/recipes", function(req, res) {
     return res.render("recipes", {recipes: recipes})
 })
 
-
 server.get("/details/:id", function(req, res) { 
     
-    const recipeIndex = req.params.id
-    
+    const recipeIndex = req.params.id    
     console.log(recipes[recipeIndex])
-    return res.render("details/:id", {recipes: recipes[recipeIndex]})
+
+    return res.render("details", {recipes: recipes[recipeIndex]} )
 })
 
 server.listen(5000, function(){
