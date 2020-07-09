@@ -28,7 +28,9 @@ server.get("/recipes", function(req, res) {
 
 server.get("/details/:id", function(req, res) { 
     
-    const recipeIndex = req.params.id    
+    const recipeIndex = req.params.id
+    console.log(req.params)
+    console.log(recipeIndex)    
     console.log(recipes[recipeIndex])
 
     return res.render("details", {recipes: recipes[recipeIndex]} )

@@ -1,6 +1,6 @@
 const recipes = document.querySelectorAll('.recipe')
 const buttons = document.querySelectorAll('button')
-const hidden = document.querySelector('.hide')
+const hidden = document.querySelectorAll('.hide')
 
 for (const recipe of recipes) {
     recipe.addEventListener("click", function() {
@@ -9,19 +9,19 @@ for (const recipe of recipes) {
     })
 }
 
-for (const button of buttons) {
-    button.addEventListener("click", function() {
-        if (button.textContent == 'ESCONDER') {
-            button.innerHTML = 'MOSTRAR'
-            hidden.classList.add(active)
-            hidden.classList.remove(desative)
+for (let i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener("click", function() {
+        if (buttons[i].textContent == 'ESCONDER') {
+            buttons[i].innerHTML = 'MOSTRAR'
+            hidden[i].classList.add('active')
         } else {
-            button.innerHTML = 'ESCONDER'
-            hidden.classList.add(active)
-            hidden.classList.remove(desative)
+            buttons[i].innerHTML = 'ESCONDER'
+            hidden[i].classList.remove('active')
         }
-    })       
+    })    
 }
+
+
 
 
 

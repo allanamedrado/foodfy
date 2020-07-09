@@ -209,11 +209,10 @@ main h1 {
 
 /*************ACTIVE/DESATIVE*************/
 
-
-.hide.active {
+.hide{
     display: block;
 }
 
-.hide.desative {
+.hide.active{
     display: none;
 }

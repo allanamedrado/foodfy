@@ -22,13 +22,13 @@
                         <h4>Ingredientes</h4>
                         <button>ESCONDER</button>
                     </div>
-                    {% for ingredient in recipes.ingredients %}
-                        <div class="hide">
+                    <div class="hide">
+                        {% for ingredient in recipes.ingredients %}                        
                             <ul>
                                 <li>{{ingredient}}</li>
-                            </ul>
-                        </div>
-                    {% endfor %}                
+                            </ul>                            
+                        {% endfor %}  
+                    </div>              
                 </div>
 
                 <div class="preparation">
@@ -36,13 +36,13 @@
                         <h4>Modo de preparo</h4>
                         <button>ESCONDER</button>
                     </div>
-                    {% for item in recipes.preparation %}
-                        <div class="hide">
+                    <div class="hide">
+                        {% for item in recipes.preparation %}
                             <ul>
                                 <li>{{item}}</li>
-                            </ul>
-                        </div>                        
-                    {% endfor %}                
+                            </ul>                                              
+                        {% endfor %}  
+                    </div>
                 </div>
 
                 <div class="information">
@@ -56,6 +56,6 @@
 
         </div>
     
-    <script src="scripts.js"> </script>
+    <script src="/scripts.js"> </script>
 {% endblock%}
 
