@@ -29,10 +29,26 @@ header img{
     text-decoration: none;
     color: #111111;
     margin-right: 30px;
+    position: relative;
 }
 
-.menu-links a:hover{
+.menu-links a:hover {
     font-weight: bold;
+}
+
+.menu-links a:hover::after{
+    width: 100%;    
+    transition: all 200ms ease-in-out;
+}
+
+.menu-links a::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    background-color: rgb(236, 161, 152);
 }
 
 
@@ -132,7 +148,7 @@ main h1 {
 .infos h4 {
     font-weight: normal;
     font-size: 18px;
-    margin-bottom: 5px;
+    margin: 0 0 5px;
 }
 
 .infos p{
@@ -143,7 +159,6 @@ main h1 {
 
 
 /************* DETAILS *******************/
-
 .recipe-details {
     margin-top: 30px;
 }
@@ -183,13 +198,12 @@ main h1 {
     align-items: center;
 }
 
-.title button {
+.button {
     font-weight: bold;
     color: #999999;
     font-size: 12px;
-    border-left: 8px;
+    margin-left: 8px;
     background-color: white;
-    border: 0;
     cursor: pointer;
 }
 
@@ -215,4 +229,90 @@ main h1 {
 
 .hide.active{
     display: none;
+}
+
+/*******************ADMIN*****************/
+
+.title-show{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.global-button {
+    background-color: #6558C3;
+    border-radius: 4px;
+    border: 0;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Roboto';
+    text-decoration: none;
+    padding: 5px;
+    height: 20px;
+}
+
+main .recipes a{
+    font-family: Roboto-Bold;
+    font-size: 14px;
+    font-weight: bold;
+    color: #6558C3;
+    text-decoration: none;
+    margin-top: 25px;
+}
+
+.title-fields{
+    font-family: Roboto-Bold;
+    font-weight: bold;
+    font-size: 16px;
+    color: #111111;
+}
+
+.input {
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    color: black;
+    width: 940px;
+    height: 50px;
+}
+
+.button-save{
+    background-color: #6558C3;
+    width: 130px;
+    height: 37px;
+    border-radius: 4px;
+    border: 0;
+    color: white;
+    font-weight: bold;
+    font-family: 'Roboto';
+    text-decoration: none;
+}
+
+.details {
+    padding: 15px;
+}
+
+button[type="button"] {
+    color: #6558C3;
+    border-radius: 4px;
+    margin-top: 10px;
+    border: 0;
+    font-family: Roboto-Bold;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#delete button[type="submit"] {
+    background-color: #DC4747;
+    width: 130px;
+    height: 37px;
+    border-radius: 4px;
+    border: 0;
+    color: white;
+    font-weight: bold;
+    font-family: 'Roboto';
+    text-decoration: none;
 }

@@ -1,0 +1,36 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>Administração</title>
+{% endblock %}
+
+{% block content %}
+    
+
+            <form method="POST" action="/admin?_method=PUT">
+                <h3>
+                    Editar Receita
+                </h3>
+
+                {% include 'admin/fields.njk' %}
+
+                <input type="hidden" name="id" value="{{recipe.id}}">
+            </form>
+
+            <form id="delete" method="POST" action="/admin?_method=DELETE">
+                <input type="hidden" name="id" value="{{recipe.id}}">
+                <button type="submit">Deletar</button>
+            </form> 
+
+            <script>
+                const formDelete = document.querySelector("#delete")
+                formDelete.addEventListener("sumbit", function(event) {
+                   const confirmation = confirm("Deseja deletar?")
+                   if(!confirmation) {
+                        event.preventDefault()   
+                 }
+                })
+            </script>           
+
+
+{% endblock content %}

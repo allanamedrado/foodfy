@@ -4,15 +4,22 @@
     <title>{{recipes.title}} - Foodfy </title>
 {%endblock%}
 
-{% block content %}       
+
+{% block content %}  
+        <div class="title-show">
+            <h1>Receita: {{recipe.title}}</h1>
+            <a href="/admin/{{recipe.id}}/edit" class="global-button">Editar</a>
+        </div>
+        
+
         <div class="recipe-details">
             <div class="details-image">
-                <img src="{{recipes.image}}" alt="Imagem de {{recipes.title}}">
+                <img src="{{recipe.image}}" alt="Imagem de {{recipe.title}}">
             </div>
             
             <div class="infos-details">
-                <h4>{{recipes.title}}</h4>
-                <p class="autor">por {{recipes.author}}</p>
+                <h4>{{recipe.title}}</h4>
+                <p class="autor">por {{recipe.author}}</p>
             </div>
         
 
@@ -23,7 +30,7 @@
                         <p class="button">ESCONDER</p>
                     </div>
                     <div class="hide">
-                        {% for ingredient in recipes.ingredients %}                        
+                        {% for ingredient in recipe.ingredients %}                        
                             <ul>
                                 <li>{{ingredient}}</li>
                             </ul>                            
@@ -37,7 +44,7 @@
                         <p class="button">ESCONDER</p>
                     </div>
                     <div class="hide">
-                        {% for item in recipes.preparation %}
+                        {% for item in recipe.preparation %}
                             <ul>
                                 <li>{{item}}</li>
                             </ul>                                              
@@ -50,7 +57,7 @@
                         <h4>Informações adicionais</h4>
                         <p class="button">ESCONDER</p>                                  
                     </div> 
-                    <p class= "hide">{{recipes.information}}</p>
+                    <p class= "hide">{{recipe.information}}</p>
                 </div>
             </div>
 

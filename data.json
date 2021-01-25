@@ -1,0 +1,56 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/pizza.png",
+      "title": "Pizza 4 estações",
+      "author": "Fabiana Melo",
+      "ingredients": [
+        "1 xícara (chá) de leite"
+      ],
+      "prepare": [
+        "No liquidificador bata o leite, o ovo, o sal, o açúcar, a margarina, a farinha de trigo e o fermento em pó até que tudo esteja encorporado."
+      ],
+      "information": "Pizza de liquidificador é uma receita deliciosa e supersimples de preparar. Feita toda no liquidificador, ela é bem prática para o dia a dia. Aqui no TudoGostoso você também encontra diversas delícias práticas feitas no liquidificador: massa de panqueca, torta de frango de liquidificador, pão de queijo de liquidificador, bolo de banana, bolo de chocolate e muito mais!"
+    },
+    {
+      "id": 2,
+      "image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/asinha.png",
+      "title": "Asinhas de frango ao barbecue",
+      "author": "Vania Steroski",
+      "ingredients": [
+        "asadsa"
+      ],
+      "prepare": [
+        "dasdasdsa"
+      ],
+      "information": "dsadsadsa"
+    },
+    {
+      "id": 3,
+      "image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/lasanha.png",
+      "title": "Lasanha mac n' cheese",
+      "author": "Juliano Vieira",
+      "ingredients": [
+        "massa pronta de lasanha"
+      ],
+      "prepare": [
+        "Em uma panela, coloque a manteiga para derreter."
+      ],
+      "information": "Recheie a lasanha com o que preferir."
+    },
+    {
+      "id": 4,
+      "image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/burger.png",
+      "title": "Triplo Bacon Burguer",
+      "author": "Jorge Relato",
+      "ingredients": [
+        "3 kg de carne moída (escolha uma carne magra e macia)"
+      ],
+      "prepare": [
+        "Misture todos os ingredientes muito bem e amasse para que fique tudo muito bem misturado."
+      ],
+      "information": "Preaqueça a chapa, frigideira ou grelha por 10 minutos antes de levar os hambúrgueres. Adicione um pouquinho de óleo ou manteiga e não amasse os hambúrgueres! \\n\\n Você sabia que a receita que precede o hambúrguer surgiu no século XIII, na Europa? A ideia de moer a carne chegou em Hamburgo no século XVII, onde um açogueiro resolveu também temperá-la. Assim, a receita foi disseminada nos Estados Unidos por alemães da região. Lá surgiu a ideia de colocar o hambúrguer no meio do pão e adicionar outros ingredientes, como queijom tomates e alface."
+    }
+  ]
+}

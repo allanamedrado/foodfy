@@ -1,5 +1,5 @@
 const recipes = document.querySelectorAll('.recipe')
-const buttons = document.querySelectorAll('button')
+const buttons = document.querySelectorAll('.button')
 const hidden = document.querySelectorAll('.hide')
 
 for (const recipe of recipes) {

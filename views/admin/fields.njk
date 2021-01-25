@@ -1,0 +1,39 @@
+<div class="details">
+    <div class="title-fields">Imagem da Receita</div>
+    <input type="url" name="image" placeholder="https://" value="{{recipe.image}}" class="input">
+</div>
+
+<div class="details">
+    <div class="title-fields">Título da Receita</div>
+    <input type="text" name="title" placeholder="{{recipe.title}}" value="{{recipe.title}}" class="input">
+</div>
+
+<div class="details">
+    <div class="title-fields">Autor</div>
+    <input type="text" name="author" value="{{recipe.author}}" class="input">
+</div>
+
+<div id="ingredients" class="details">
+    <div class="title-fields">Adicionar Ingredientes</div>
+    <div class="ingredient">
+        <input type="text" name="ingredients[]" value="{{recipe.ingredient}}" placeholder="Ingredient" class="input">
+    </div>
+    <button type="button" class="add-ingredient">Add novo ingrediente</button>
+</div>
+
+
+<div id="preparation" class="details">
+    <div class="title-fields">Adicionar Modo de Preparo</div>
+    <div class="prepare">
+        <input type="text" name="prepare[]" placeholder="Prepare" value="{{recipe.prepare}}" class="input">
+    </div>    
+    <button type="button" class="add-prepare">Add novo passo</button>
+</div>
+
+<div id="information" class="details">
+    <div class="title-fields">Adicionar Informação</div>
+    <input type="text" name="information" placeholder="Information" value="{{recipe.information}}" class="input">
+</div>
+
+<button type="submit" class="button-save">Salvar receita</button>
+

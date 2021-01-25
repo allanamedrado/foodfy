@@ -9,7 +9,7 @@
     
        <div class="recipes">
            {% for recipe in recipes %}
-                <div class="recipe" id="{{recipes.indexOf(recipe)}}">
+                <div class="recipe" id="{{recipe.id}}">
                     <div class="recipe-image">
                         <img src="{{recipe.image}}" alt="Imagem {{recipe.title}}">
                     </div>

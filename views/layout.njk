@@ -11,17 +11,20 @@
 </head>
 <body> 
     <div class="content">   
-        <header>
-            <a href="/"><img src="/assets/logo.png" alt=""></a>
-                <div class="menu-links">
-                    <a href="/about" target="_blank">Sobre</a>
-                    <a href="/recipes" target="_blank">Receitas</a>
-                </div>        
-        </header>
+        {%block header%}
+            <header>
+                <a href="/"><img src="/assets/logo.png" alt="Logo Foodfy"></a>
+                    <div class="menu-links">
+                        <a href="/about" target="_blank">Sobre</a>
+                        <a href="/recipes" target="_blank">Receitas</a>
+                        <a href="/admin/index" target="_blank">Administração</a>
+                    </div>        
+            </header>
+        {%endblock%}
         
-            {% block content%}
+        {% block content%}
 
-            {% endblock %}
+        {% endblock %}
 
     </div>
 
